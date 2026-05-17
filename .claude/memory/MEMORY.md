@@ -1,0 +1,14 @@
+- [User: Kaushik Ranpariya](user_kaushik.md) — Senior Full Stack Dev (6+ yrs), Rajkot India, owns the portfolio
+- [Project: therk99.com portfolio](project_portfolio_therk99.md) — single-page React portfolio, domain therk99.com, will be hosted free + pointed at domain
+- [SEO setup](project_seo_setup.md) — full meta, OG, Twitter, JSON-LD (Person/WebSite/ProfessionalService/BreadcrumbList), robots.txt, sitemap.xml, manifest, noscript fallback; targets "Kaushik Ranpariya" + "Senior Full Stack Developer" SERP
+- [OG image generator](project_og_image.md) — `npm run build:og`; SVG template + sharp renders 1200×630 PNG with embedded avatar base64
+- [Future features (v2)](project_future_features.md) — admin panel, contact form + email automation, WhatsApp AI automation; target ~June–July 2026
+- [Design preferences](feedback_design_aesthetic.md) — premium iridescent violet/cyan, iOS-18 frosted glass; rejected gold theme; visible motion > subtle
+- [2D avatar — no 3D tilt](feedback_2d_avatar.md) — Pixar PNG avatar; rotateX/rotateY looks uncanny, must keep flat with float/sway only
+- [Animation visibility rules](feedback_animation_visibility.md) — animations must be perceptibly fast; don't put marquee CSS in inline <style>; HMR drops it
+- [Responsive navbar gotcha](feedback_navbar_responsive.md) — 100vw on Windows includes scrollbar; use inset-x positioning
+- [Print resume rules](feedback_print_resume.md) — 2 pages max, ATS-friendly Arial 9.5pt; portal + display:none; never page-break-inside-avoid on sections
+- [Hover effects on cards](feedback_hover_effects.md) — drop Tilt on 2D content; shadows must match border-radius; remove labels like "vCard 3.0"
+- [Brand identity](feedback_brand_identity.md) — header logo is "the"+"rk99" two-color; no ".com"; no website chip anywhere (domain itself opens portfolio)
+- [Resume + LinkedIn references](reference_external_systems.md) — LinkedIn URL, recommender identities, source PDF resume, original Arvind Singh prompt guide
+- [Testimonial avatars](feedback_testimonial_avatars.md) — image-with-initials-fallback pattern; photos saved as /public/testimonials/<id>.jpeg

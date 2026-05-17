@@ -1,0 +1,260 @@
+{
+  "profile": {
+    "name": "Kaushik Ranpariya",
+    "shortName": "Kaushik",
+    "tagline": "I build SaaS, e-learning, and AI-powered platforms end to end — full-time and freelance.",
+    "role": "Senior Full Stack Developer",
+    "specialization": "Angular · Node.js · NestJS · Laravel · Django · AI",
+    "location": "Rajkot, Gujarat, India",
+    "yearsOfExperience": "6+",
+    "bio": "Senior Full Stack Developer with 6+ years of experience building SaaS, e-learning, e-commerce, booking, and workflow products. I work hands-on across Angular, Node.js, NestJS, Express, Laravel, and Django, with production delivery covering Firebase, Firestore, GCP, AWS, REST APIs, payments, search, analytics, automation, and AI integrations. Available for full-time roles and freelance product engagements.",
+    "avatarImage": "/avatar.png",
+    "availableForFreelance": true,
+    "availableForFullTime": true,
+    "freelance": {
+      "headline": "Freelance product engineering",
+      "summary": "I take on freelance work for SaaS MVPs, AI integrations, Angular/React frontends, NestJS/Laravel backends, and Firebase/GCP platforms. Hourly or fixed-scope. Remote, async-friendly.",
+      "services": [
+        "MVP build (4–8 weeks)",
+        "AI / OpenAI integrations",
+        "Angular & React frontends",
+        "NestJS / Laravel / Django APIs",
+        "Firebase / GCP / AWS deployment",
+        "Stripe / PayPal payments wiring",
+        "Performance & technical audits"
+      ]
+    },
+    "social": {
+      "github": "",
+      "instagram": "",
+      "linkedin": "https://www.linkedin.com/in/kaushik-ranpariya-125a04164",
+      "email": "kaushikranpariya99@gmail.com",
+      "phone": "+91 7016543701",
+      "whatsapp": "https://wa.me/917016543701",
+      "website": "https://therk99.com"
+    }
+  },
+  "skills": {
+    "categories": [
+      {
+        "name": "Frontend",
+        "items": ["Angular", "React.js", "Angular Material", "RxJS", "NgRx", "TypeScript", "JavaScript", "HTML", "CSS", "Tailwind CSS"]
+      },
+      {
+        "name": "Backend",
+        "items": ["Node.js", "NestJS", "Express", "Laravel", "Django", "REST APIs", "OpenAI API"]
+      },
+      {
+        "name": "Data",
+        "items": ["Firestore", "MySQL", "PostgreSQL", "MongoDB", "Redis", "WebSockets", "Socket.io"]
+      },
+      {
+        "name": "Cloud & Tools",
+        "items": ["Firebase", "GCP", "AWS S3", "CloudFront", "ACM", "Postman", "LambdaTest", "Git"]
+      },
+      {
+        "name": "Integrations",
+        "items": ["Stripe", "PayPal", "Zoom", "Zapier", "Pabbly", "Algolia", "OpenSearch", "Google Analytics", "Search Console", "Facebook Pixel"]
+      }
+    ]
+  },
+  "coreSkills": [
+    { "title": "Angular / TypeScript", "items": "Angular, Angular Material, RxJS, NgRx, standalone components" },
+    { "title": "Node.js / NestJS / Express", "items": "REST APIs, backend modules, integrations, auth, jobs" },
+    { "title": "Laravel / MySQL", "items": "Admin systems, role permissions, dashboards, workflows" },
+    { "title": "Firebase / Firestore / GCP", "items": "AngularFire, auth, cloud functions, batch jobs" },
+    { "title": "Python / Django", "items": "Django apps, REST APIs, admin modules, PostgreSQL" },
+    { "title": "Payments / Automation / AI", "items": "Stripe, PayPal, OpenAI, Zoom, Zapier, Pabbly" }
+  ],
+  "experience": [
+    {
+      "company": "OnlineCourseHost.com / Vasco Cavalheiro IT Services SPRL",
+      "role": "Senior Full Stack Developer",
+      "period": "Feb 2025 — Present",
+      "location": "Brussels, Belgium · Remote",
+      "summary": "Flagship product platform — white-label multi-tenant learning platform with SCORM, live sessions, subscriptions, AI-assisted content.",
+      "highlights": [
+        "Build and maintain a white-label multi-tenant learning platform covering SCORM, live sessions, webinars, quizzes, subscriptions, communities, certificates, digital downloads, and AI-assisted content.",
+        "Develop features using Angular, TypeScript, Node.js, NestJS, Express, AngularFire, Firebase Auth, Firestore, Cloud Functions, and batch-job workflows on GCP.",
+        "Deliver integrations across Stripe, PayPal, OpenAI, OpenSearch, Zoom, Zapier, Pabbly, Google Analytics, Search Console, Facebook Pixel, CloudFront, S3, and ACM.",
+        "Handle production issues, QA feedback, API delivery, and UI updates across platform pages, admin tools, and related products such as Angular University."
+      ]
+    },
+    {
+      "company": "Evolution Infosystem Inc.",
+      "role": "Senior Full Stack Developer",
+      "period": "Nov 2021 — Feb 2025",
+      "location": "Rajkot, India · On-site",
+      "summary": "Team lead support in later phase — delivered Laravel, Angular, React, Node, NestJS, Express solutions across multiple client products.",
+      "highlights": [
+        "Delivered Laravel, Angular, React, Node.js, NestJS, and Express solutions across booking, event, admin, form-builder, fitness, workflow, and commerce projects.",
+        "Built REST APIs, role/permission systems, notifications, cron jobs, dynamic forms, payment workflows, and dashboard modules using MySQL, Firebase, and related services.",
+        "Owned full-stack delivery across Inscents, VURV, EventManager, Keep2Clean, Evolution Insiders, FormsBuild, Fit4U, LushFulLash, and internal employee portals.",
+        "Translated Figma designs into responsive interfaces, mentored interns, and helped coordinate delivery during later project phases."
+      ]
+    },
+    {
+      "company": "Lucson Infotech Pvt. Ltd. (OPC)",
+      "role": "Junior Laravel / Django Developer",
+      "period": "May 2020 — May 2021",
+      "location": "Rajkot, India · On-site",
+      "summary": "Fast transition into Django — admin modules, client pages, and REST APIs delivered within the first months of joining.",
+      "highlights": [
+        "Quickly moved from Laravel into Python/Django and delivered admin modules, client-facing pages, and REST APIs within the first months.",
+        "Built FestivalTemp marketing-poster generation features with PostgreSQL and Club Mahindra hotel-management admin APIs using Django and MongoDB.",
+        "Completed a WhatsApp notification mini-project in PHP CodeIgniter/MySQL and collaborated with the team on full-stack delivery."
+      ]
+    }
+  ],
+  "services": [
+    {
+      "title": "Full Stack Web Development",
+      "description": "End-to-end product builds across Angular, React, Node.js, NestJS, Express, Laravel, and Django — from data models to UI."
+    },
+    {
+      "title": "AI & LLM Integrations",
+      "description": "OpenAI-powered features for content generation, summarization, and assistive workflows inside SaaS products."
+    },
+    {
+      "title": "Cloud, Firebase & GCP",
+      "description": "Firebase Auth, Firestore, Cloud Functions, batch jobs, AWS S3, CloudFront, ACM, and production deployment workflows."
+    },
+    {
+      "title": "Payments, Search & Automation",
+      "description": "Stripe, PayPal, OpenSearch, Algolia, Zapier, Pabbly, Zoom, analytics — wiring SaaS products to the tools they need."
+    }
+  ],
+  "projects": [
+    {
+      "id": "onlinecoursehost",
+      "title": "OnlineCourseHost.com",
+      "subtitle": "White-label multi-tenant e-learning SaaS",
+      "description": "Flagship product platform powering SCORM, live sessions, webinars, quizzes, subscriptions, communities, certificates, digital downloads, and AI-assisted content. Built and maintained across Angular, NestJS, Firebase, GCP, and a deep integration stack.",
+      "stack": ["Angular", "NestJS", "Node.js", "Firebase", "GCP", "Stripe", "OpenAI", "OpenSearch"],
+      "role": "Senior Full Stack Developer",
+      "year": "2025 — Present",
+      "link": "https://onlinecoursehost.com",
+      "image": "",
+      "highlight": true
+    },
+    {
+      "id": "angular-university",
+      "title": "Angular University",
+      "subtitle": "Learning platform for Angular developers",
+      "description": "Sister product to OnlineCourseHost.com. Worked on platform pages, admin tooling, and UI updates around courses, subscriptions, and content delivery.",
+      "stack": ["Angular", "TypeScript", "Firebase", "NestJS"],
+      "role": "Full Stack Developer",
+      "year": "2025",
+      "link": "https://angular-university.io",
+      "image": "",
+      "highlight": false
+    },
+    {
+      "id": "vurv",
+      "title": "VURV",
+      "subtitle": "Booking & event platform",
+      "description": "Full-stack delivery of booking flows, admin dashboards, payment workflows, and notifications — built with Laravel, MySQL, and Angular.",
+      "stack": ["Laravel", "Angular", "MySQL", "Stripe"],
+      "role": "Senior Full Stack Developer",
+      "year": "2023",
+      "link": "",
+      "image": "",
+      "highlight": false
+    },
+    {
+      "id": "formsbuild",
+      "title": "FormsBuild",
+      "subtitle": "Dynamic form builder",
+      "description": "A configurable form-builder product with dynamic fields, validation, role/permission management, and submission workflows.",
+      "stack": ["Laravel", "Angular", "MySQL", "REST APIs"],
+      "role": "Full Stack Developer",
+      "year": "2023",
+      "link": "",
+      "image": "",
+      "highlight": false
+    },
+    {
+      "id": "keep2clean",
+      "title": "Keep2Clean",
+      "subtitle": "Service booking & workflow product",
+      "description": "Customer-facing booking experience plus an admin workflow layer covering scheduling, dispatch, and recurring jobs.",
+      "stack": ["Laravel", "Angular", "MySQL"],
+      "role": "Full Stack Developer",
+      "year": "2022",
+      "link": "",
+      "image": "",
+      "highlight": false
+    },
+    {
+      "id": "fit4u",
+      "title": "Fit4U",
+      "subtitle": "Fitness app with workout & nutrition flows",
+      "description": "Customer-facing fitness product with auth, subscriptions, content delivery, and admin tooling.",
+      "stack": ["Angular", "Node.js", "Firebase"],
+      "role": "Full Stack Developer",
+      "year": "2022",
+      "link": "",
+      "image": "",
+      "highlight": false
+    },
+    {
+      "id": "inscents",
+      "title": "Inscents",
+      "subtitle": "E-commerce storefront",
+      "description": "Storefront with cart, checkout, payment workflows, and admin dashboard. Laravel backend, Angular frontend, MySQL data layer.",
+      "stack": ["Laravel", "Angular", "MySQL", "Stripe"],
+      "role": "Full Stack Developer",
+      "year": "2022",
+      "link": "",
+      "image": "",
+      "highlight": false
+    },
+    {
+      "id": "club-mahindra",
+      "title": "Club Mahindra Admin",
+      "subtitle": "Hotel management admin APIs",
+      "description": "Backend admin APIs for hotel management — bookings, inventory, user management — built with Django and MongoDB.",
+      "stack": ["Django", "Python", "MongoDB", "REST APIs"],
+      "role": "Junior Developer",
+      "year": "2021",
+      "link": "",
+      "image": "",
+      "highlight": false
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Sc. IT",
+      "institution": "Atmiya Institute of Technology & Science, Rajkot",
+      "year": "2020",
+      "details": "CGPA: 6.8 / 10"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "john",
+      "image": "/testimonials/john.jpeg",
+      "quote": "I had the chance to work with Kaushik at OnlineCourseHost, and later manage him when I stepped into the Development Lead role.\n\nKaushik is the kind of developer you can rely on to get things done without constant supervision. He works well on his own, but also knows when to ask the right questions to keep things moving in the right direction. That balance is not always easy to find.\n\nHe is also a strong team player. Easy to collaborate with, open to feedback, and always willing to support others when needed.\n\nOn the technical side, he has a solid grasp of system design and is able to think beyond just implementation. He considers how things fit together, scale, and evolve over time, which makes a big difference on real products.\n\nOverall, Kaushik is someone I'd happily work with again.",
+      "name": "John Danquah-Boateng",
+      "role": "Full-Stack Software Engineer · AI · AWS · GCP",
+      "avatarColor": "#A855F7",
+      "relationship": "Worked with Kaushik on the same team · April 2026"
+    },
+    {
+      "id": "vasco",
+      "image": "/testimonials/vasco.jpeg",
+      "quote": "I had the pleasure of working closely with Kaushik at OnlineCourseHost.com, and I can say without hesitation that he is one of the rare full stack developers who truly excels across the entire stack.\n\nKaushik consistently delivered outstanding work, whether it was translating Figma designs into pixel-perfect, production-ready frontend Angular implementations, or building robust backend systems using Node.js, Google Cloud, and Firebase Cloud Functions. His attention to detail is exceptional, and he takes real pride in getting things right — both visually and technically.\n\nWhat sets Kaushik apart is his ability to take ownership of complex tasks end-to-end. You can give him a problem, and he will handle everything from planning to execution with minimal supervision, always delivering high-quality results. He is reliable, fast, and extremely consistent — the kind of developer you can fully trust.\n\nBeyond his technical skills, Kaushik is simply a pleasure to work with. He communicates clearly, collaborates well, and brings a calm, professional attitude to everything he does.\n\nIn every sense of the word, Kaushik is a senior developer. I would highly recommend him to any team looking for someone who can deliver exceptional work across both frontend and backend.",
+      "name": "Vasco Cavalheiro",
+      "role": "Founder, OnlineCourseHost.com · Angular University",
+      "avatarColor": "#EC4899",
+      "relationship": "Managed Kaushik directly · April 2026"
+    }
+  ],
+  "achievements": [
+    "Contributed to a large white-label e-learning platform with multi-tenancy, payments, search, automation, certificates, and AI-assisted content features.",
+    "Owned end-to-end delivery across 10+ client and product initiatives spanning edtech, booking, commerce, admin, and internal workflow domains.",
+    "Built and supported integrations across Stripe, PayPal, OpenAI, Zoom, Zapier, Pabbly, Google Analytics, Search Console, Facebook Pixel, and search platforms.",
+    "Progressed from junior developer to senior full stack responsibilities, including production support, QA issue resolution, and later-stage team / intern guidance.",
+    "Adapted from Laravel into Python / Django early in career and delivered production work within a short ramp-up period."
+  ]
+}

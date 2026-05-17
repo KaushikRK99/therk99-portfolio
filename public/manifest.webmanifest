@@ -1,0 +1,27 @@
+{
+  "name": "Kaushik Ranpariya — Senior Full Stack Developer",
+  "short_name": "therk99",
+  "description": "Portfolio of Kaushik Ranpariya — Senior Full Stack Developer building SaaS, AI, and e-learning platforms. Angular, Node.js, NestJS, Laravel, Firebase, AWS, GCP.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#06050A",
+  "background_color": "#06050A",
+  "lang": "en",
+  "categories": ["business", "productivity", "developer"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/avatar.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

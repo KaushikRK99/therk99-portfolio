@@ -1,0 +1,109 @@
+<svg viewBox="0 0 1200 630" width="1200" height="630" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#06050A"/>
+      <stop offset="50%" stop-color="#0A0810"/>
+      <stop offset="100%" stop-color="#1B1730"/>
+    </linearGradient>
+    <linearGradient id="iris" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="50%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#F472B6"/>
+    </linearGradient>
+    <linearGradient id="apple" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#B5B1D6"/>
+    </linearGradient>
+    <radialGradient id="auroraV" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="auroraC" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="auroraP" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F472B6" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#F472B6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="avatarHalo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blurXL" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="70"/>
+    </filter>
+    <filter id="blurLG" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+    <clipPath id="avatarClip">
+      <circle cx="940" cy="315" r="215"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Aurora blobs -->
+  <circle cx="180" cy="180" r="320" fill="url(#auroraV)" filter="url(#blurXL)"/>
+  <circle cx="980" cy="480" r="320" fill="url(#auroraC)" filter="url(#blurXL)"/>
+  <circle cx="600" cy="80" r="200" fill="url(#auroraP)" filter="url(#blurXL)"/>
+
+  <!-- Eyebrow pill -->
+  <rect x="78" y="74" width="612" height="44" rx="22" fill="rgba(15,12,24,0.55)" stroke="rgba(167,139,250,0.35)" stroke-width="1"/>
+  <circle cx="104" cy="96" r="5" fill="#22D3EE"/>
+  <text x="124" y="102" font-family="Helvetica, Arial, sans-serif" font-weight="600" font-size="15" letter-spacing="3" fill="#D4C7FF">
+    SENIOR FULL STACK DEVELOPER · 6+ YEARS
+  </text>
+
+  <!-- Big name -->
+  <text x="78" y="245" font-family="Helvetica, Arial, sans-serif" font-weight="900" font-size="92" fill="url(#apple)" letter-spacing="-3">Kaushik</text>
+  <text x="78" y="340" font-family="Helvetica, Arial, sans-serif" font-weight="900" font-size="92" fill="url(#apple)" letter-spacing="-3">Ranpariya</text>
+
+  <!-- Subtitle -->
+  <text x="80" y="404" font-family="Helvetica, Arial, sans-serif" font-weight="700" font-size="32" fill="url(#iris)">Senior Full Stack Developer</text>
+
+  <!-- Stack -->
+  <text x="80" y="448" font-family="Helvetica, Arial, sans-serif" font-weight="500" font-size="22" fill="#D4C7FF">Angular · Node.js · NestJS · Laravel · Django · AI</text>
+
+  <!-- Location + availability pill -->
+  <rect x="78" y="478" width="500" height="40" rx="20" fill="rgba(15,12,24,0.55)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="100" y="503" font-family="Helvetica, Arial, sans-serif" font-weight="500" font-size="16" fill="#A29BC8">Rajkot, India  ·  Available for freelance &amp; full-time</text>
+
+  <!-- Bottom brand -->
+  <g transform="translate(78, 570)">
+    <text font-family="Helvetica, Arial, sans-serif" font-weight="900" font-size="40" letter-spacing="-1">
+      <tspan fill="url(#apple)">the</tspan><tspan fill="url(#iris)">rk99</tspan>
+    </text>
+  </g>
+
+  <!-- Avatar area -->
+  <!-- Outer iris ring (glow) -->
+  <circle cx="940" cy="315" r="270" fill="url(#avatarHalo)" filter="url(#blurLG)"/>
+  <!-- Iris ring -->
+  <circle cx="940" cy="315" r="226" fill="none" stroke="url(#iris)" stroke-width="6"/>
+  <!-- Inner background circle -->
+  <circle cx="940" cy="315" r="218" fill="#0A0810"/>
+  <!-- Avatar image clipped to circle -->
+  <image href="AVATAR_DATA_URI" x="720" y="95" width="440" height="440" clip-path="url(#avatarClip)" preserveAspectRatio="xMidYMid slice"/>
+
+  <!-- Floating code-tag chips around avatar -->
+  <g font-family="ui-monospace, Consolas, monospace" font-size="16" font-weight="600">
+    <g transform="translate(675, 165)">
+      <rect width="58" height="32" rx="9" fill="rgba(15,12,24,0.72)" stroke="rgba(34,211,238,0.55)" stroke-width="1"/>
+      <text x="29" y="22" text-anchor="middle" fill="#EAE7FA">&lt;/&gt;</text>
+    </g>
+    <g transform="translate(1158, 230)">
+      <rect width="46" height="28" rx="8" fill="rgba(15,12,24,0.72)" stroke="rgba(244,114,182,0.55)" stroke-width="1"/>
+      <text x="23" y="20" text-anchor="middle" fill="#EAE7FA">{ }</text>
+    </g>
+    <g transform="translate(1145, 410)">
+      <rect width="50" height="28" rx="8" fill="rgba(15,12,24,0.72)" stroke="rgba(167,139,250,0.55)" stroke-width="1"/>
+      <text x="25" y="20" text-anchor="middle" fill="#EAE7FA">=&gt;</text>
+    </g>
+    <g transform="translate(660, 470)">
+      <rect width="48" height="28" rx="8" fill="rgba(15,12,24,0.72)" stroke="rgba(103,232,249,0.5)" stroke-width="1"/>
+      <text x="24" y="20" text-anchor="middle" fill="#EAE7FA">fn</text>
+    </g>
+  </g>
+</svg>

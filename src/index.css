@@ -1,0 +1,538 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --bg: #060509;
+  --ink: #0A0810;
+  --panel: #0F0C18;
+  --violet: #8B5CF6;
+  --cyan: #22D3EE;
+  --pink: #F472B6;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg);
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: #EAE7FA;
+  font-family: 'Kanit', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+@media (hover: none), (pointer: coarse) {
+  body { cursor: auto; }
+  .cursor-ring, .cursor-dot, .cursor-orb-stage { display: none !important; }
+}
+
+section { scroll-margin-top: 80px; }
+
+/* ============================================================
+   Text gradients
+   ============================================================ */
+.apple-text {
+  background: linear-gradient(180deg, #FFFFFF 0%, #B5B1D6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.iris-text {
+  background: linear-gradient(135deg, #67E8F9 0%, #A78BFA 50%, #F9A8D4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.iris-text-shimmer {
+  background: linear-gradient(
+    90deg,
+    #22D3EE 0%, #8B5CF6 25%, #F472B6 50%, #8B5CF6 75%, #22D3EE 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 8s linear infinite;
+}
+
+.iris-bg {
+  background: linear-gradient(135deg, #22D3EE 0%, #8B5CF6 50%, #F472B6 100%);
+}
+
+/* ============================================================
+   iOS-18 style Liquid Glass
+   ============================================================ */
+.glass {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.02) 100%),
+    rgba(15, 12, 24, 0.55);
+  backdrop-filter: blur(22px) saturate(180%);
+  -webkit-backdrop-filter: blur(22px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 1.25rem;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.14),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.02),
+    0 20px 60px -20px rgba(0, 0, 0, 0.6);
+}
+
+.glass-strong {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.02) 100%),
+    rgba(15, 12, 24, 0.65);
+  backdrop-filter: blur(28px) saturate(200%);
+  -webkit-backdrop-filter: blur(28px) saturate(200%);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 1.5rem;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.16),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.03),
+    0 30px 80px -30px rgba(0, 0, 0, 0.7);
+}
+
+.glass-tint-violet {
+  background:
+    linear-gradient(180deg, rgba(139,92,246,0.08) 0%, rgba(139,92,246,0.01) 100%),
+    rgba(15, 12, 24, 0.6);
+  border: 1px solid rgba(139, 92, 246, 0.16);
+}
+
+.glass-tint-cyan {
+  background:
+    linear-gradient(180deg, rgba(34,211,238,0.07) 0%, rgba(34,211,238,0.01) 100%),
+    rgba(15, 12, 24, 0.6);
+  border: 1px solid rgba(34, 211, 238, 0.16);
+}
+
+.glass-hover-glow {
+  transition: border-color 400ms ease, box-shadow 400ms ease, transform 400ms ease;
+}
+.glass-hover-glow:hover {
+  border-color: rgba(167, 139, 250, 0.45);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.18),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.04),
+    0 30px 80px -20px rgba(139, 92, 246, 0.35),
+    0 0 40px -10px rgba(34, 211, 238, 0.25);
+}
+
+.hairline {
+  background-image: linear-gradient(
+    90deg,
+    transparent,
+    rgba(139, 92, 246, 0.35) 25%,
+    rgba(34, 211, 238, 0.35) 50%,
+    rgba(244, 114, 182, 0.25) 75%,
+    transparent
+  );
+  height: 1px;
+}
+
+.body-text {
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+}
+
+/* ============================================================
+   Marquee
+   ============================================================ */
+.marquee-track {
+  animation: marquee 40s linear infinite;
+  will-change: transform;
+}
+.testimonials-marquee .marquee-track {
+  animation: marquee 55s linear infinite;
+}
+.marquee-wrapper:hover .marquee-track { animation-play-state: paused; }
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .iris-text-shimmer { animation: none; }
+}
+
+/* ============================================================
+   Scrollbar — thin gradient pill, no arrows, no background
+   ============================================================ */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #8B5CF6 transparent;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background: transparent !important;
+}
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+::-webkit-scrollbar-button,
+::-webkit-scrollbar-button:single-button,
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment,
+::-webkit-scrollbar-button:vertical:start:decrement,
+::-webkit-scrollbar-button:vertical:end:increment,
+::-webkit-scrollbar-button:horizontal:start:decrement,
+::-webkit-scrollbar-button:horizontal:end:increment {
+  display: none !important;
+  height: 0 !important;
+  width: 0 !important;
+  background: transparent !important;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #8B5CF6 0%, #22D3EE 100%) !important;
+  border-radius: 999px;
+  border: none;
+  min-height: 32px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #A78BFA 0%, #67E8F9 100%) !important;
+}
+::-webkit-scrollbar-corner { background: transparent !important; }
+
+/* ============================================================
+   Custom cursor — smooth, no stutter
+   ============================================================ */
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  pointer-events: none;
+  z-index: 9998;
+  border: 1.5px solid rgba(199, 178, 255, 0.85);
+  background: radial-gradient(circle, rgba(167,139,250,0.18), transparent 70%);
+  mix-blend-mode: screen;
+  will-change: transform;
+  transition: width 220ms cubic-bezier(0.22,1,0.36,1),
+              height 220ms cubic-bezier(0.22,1,0.36,1),
+              border-color 220ms ease,
+              background 220ms ease;
+}
+.cursor-ring.is-hover {
+  width: 72px;
+  height: 72px;
+  border-color: rgba(103, 232, 249, 0.9);
+  background: radial-gradient(circle, rgba(103,232,249,0.22), transparent 70%);
+}
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: #EAE7FA;
+  pointer-events: none;
+  z-index: 10000;
+  will-change: transform;
+  box-shadow: 0 0 10px rgba(199, 178, 255, 0.9);
+}
+
+a, button, [data-cursor='hover'] { cursor: none; }
+
+@media (pointer: coarse) {
+  body, a, button, [data-cursor] { cursor: auto !important; }
+}
+
+/* ============================================================
+   Orbit code tags (rotate around avatar)
+   ============================================================ */
+.orbit-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(234, 231, 250, 0.96);
+  background: rgba(15, 12, 24, 0.55);
+  border: 1px solid rgba(167, 139, 250, 0.4);
+  backdrop-filter: blur(14px) saturate(180%);
+  -webkit-backdrop-filter: blur(14px) saturate(180%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.18),
+    0 8px 24px -8px rgba(139, 92, 246, 0.55);
+  white-space: nowrap;
+  will-change: transform;
+}
+.orbit-pill.tone-cyan  { border-color: rgba(103, 232, 249, 0.45); box-shadow: inset 0 1px 0 rgba(255,255,255,0.18), 0 8px 24px -8px rgba(34,211,238,0.55); }
+.orbit-pill.tone-pink  { border-color: rgba(249, 168, 212, 0.45); box-shadow: inset 0 1px 0 rgba(255,255,255,0.18), 0 8px 24px -8px rgba(244,114,182,0.55); }
+
+@keyframes orbit-cw {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+@keyframes orbit-ccw {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(-360deg); }
+}
+
+/* Gentle avatar idle motion */
+@keyframes avatar-sway {
+  0%, 100% { transform: translateY(0) rotate(-0.7deg); }
+  50%      { transform: translateY(-10px) rotate(0.7deg); }
+}
+.avatar-idle {
+  animation: avatar-sway 7s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* ============================================================
+   Noise + Aurora
+   ============================================================ */
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0'/></filter><rect width='100%' height='100%' filter='url(%23n)' /></svg>");
+}
+
+.aurora {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.55;
+  pointer-events: none;
+}
+.aurora-violet { background: radial-gradient(circle, rgba(139,92,246,0.55), transparent 65%); }
+.aurora-cyan   { background: radial-gradient(circle, rgba(34,211,238,0.45),  transparent 65%); }
+.aurora-pink   { background: radial-gradient(circle, rgba(244,114,182,0.45), transparent 65%); }
+
+/* ============================================================
+   Buttons (no harsh shadows — iOS pill style)
+   ============================================================ */
+.btn-iris {
+  position: relative;
+  isolation: isolate;
+  background: linear-gradient(135deg, #22D3EE 0%, #8B5CF6 55%, #F472B6 100%);
+  color: #0A0810;
+  font-weight: 700;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.55),
+    0 12px 32px -12px rgba(139, 92, 246, 0.55);
+  transition: transform 200ms ease, box-shadow 200ms ease, filter 200ms ease;
+}
+.btn-iris:hover {
+  filter: brightness(1.06);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.65),
+    0 18px 48px -14px rgba(139, 92, 246, 0.7);
+}
+
+.btn-ghost {
+  border: 1px solid rgba(199, 178, 255, 0.3);
+  color: #D4C7FF;
+  background: rgba(15, 12, 24, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  transition: border-color 220ms ease, color 220ms ease, background 220ms ease;
+}
+.btn-ghost:hover {
+  border-color: rgba(199, 178, 255, 0.7);
+  color: #FFFFFF;
+  background: rgba(139, 92, 246, 0.08);
+}
+
+/* ============================================================
+   Tags / chips
+   ============================================================ */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(15, 12, 24, 0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: #D4C7FF;
+  transition: border-color 200ms ease, color 200ms ease, background 200ms ease;
+}
+.tag:hover {
+  border-color: rgba(167, 139, 250, 0.55);
+  color: #FFFFFF;
+  background: rgba(139, 92, 246, 0.1);
+}
+
+/* ============================================================
+   Section eyebrow
+   ============================================================ */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 11px;
+  letter-spacing: 0.32em;
+  color: #A29BC8;
+  text-transform: uppercase;
+}
+.eyebrow::before {
+  content: '';
+  width: 28px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #A78BFA);
+}
+
+/* ============================================================
+   Hover lift for cards (replaces tilt corner shadow)
+   ============================================================ */
+.lift {
+  transition: transform 500ms cubic-bezier(0.22, 1, 0.36, 1),
+              border-color 400ms ease,
+              box-shadow 500ms ease;
+}
+.lift:hover {
+  transform: translateY(-6px);
+  border-color: rgba(167, 139, 250, 0.4);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.18),
+    0 40px 90px -20px rgba(139, 92, 246, 0.35),
+    0 0 60px -20px rgba(34, 211, 238, 0.25);
+}
+
+/* ============================================================
+   ATS-friendly print resume
+   ============================================================ */
+.print-resume {
+  display: none;
+}
+
+@media print {
+  @page { size: A4; margin: 0.4in 0.45in; }
+
+  html, body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    cursor: auto !important;
+    overflow: visible !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: auto !important;
+  }
+
+  /* Hide everything that's a direct child of body */
+  body > * { display: none !important; }
+
+  /* …except the portaled resume */
+  body > .print-resume {
+    display: block !important;
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 9.5pt !important;
+    line-height: 1.32 !important;
+  }
+
+  .print-resume .pr-header { margin: 0 0 8pt; padding-bottom: 5pt; border-bottom: 1.2pt solid #000; }
+  .print-resume h1 {
+    font-size: 18pt;
+    margin: 0 0 1pt;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: #000;
+    -webkit-text-fill-color: #000;
+    background: none;
+    line-height: 1.1;
+  }
+  .print-resume .pr-title { font-size: 11pt; margin: 0 0 2pt; color: #1a1a1a; font-weight: 600; line-height: 1.2; }
+  .print-resume .pr-tagline { font-size: 9pt; color: #444; margin: 0 0 4pt; font-style: italic; line-height: 1.25; }
+  .print-resume .pr-contact { font-size: 9pt; color: #222; margin: 0; line-height: 1.3; }
+  .print-resume .pr-contact-2 { color: #555; margin-top: 1pt; }
+
+  .print-resume section {
+    margin-top: 7pt;
+  }
+  .print-resume h2 {
+    font-size: 10pt;
+    letter-spacing: 0.12em;
+    border-bottom: 0.8pt solid #000;
+    padding-bottom: 1pt;
+    margin: 0 0 4pt;
+    color: #000;
+    font-weight: 700;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+  .print-resume h3 {
+    font-size: 10pt;
+    margin: 4pt 0 1pt;
+    font-weight: 700;
+    color: #000;
+    line-height: 1.2;
+  }
+  .print-resume p { margin: 0 0 2pt; }
+  .print-resume ul {
+    margin: 2pt 0 4pt 14pt;
+    padding: 0;
+    list-style: disc;
+  }
+  .print-resume li { margin: 0 0 1pt; line-height: 1.32; }
+
+  .print-resume .pr-core-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3pt 14pt;
+    margin: 0;
+  }
+  .print-resume .pr-core-item { display: block; line-height: 1.3; }
+  .print-resume .pr-core-item strong { display: block; font-size: 9.5pt; color: #000; margin-bottom: 0; }
+  .print-resume .pr-core-item span { font-size: 9pt; color: #333; }
+
+  .print-resume .pr-tech-line { font-size: 9pt; margin: 0 0 1.5pt; line-height: 1.3; }
+  .print-resume .pr-tech-line strong { color: #000; }
+
+  .print-resume .pr-job,
+  .print-resume .pr-edu {
+    margin-bottom: 4pt;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  .print-resume .pr-job-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10pt;
+  }
+  .print-resume .pr-job-company { font-size: 9.5pt; margin: 0 0 1pt; color: #222; line-height: 1.25; }
+  .print-resume .pr-job-meta { text-align: right; min-width: 28%; }
+  .print-resume .pr-period { font-size: 9pt; font-weight: 700; color: #000; margin: 0; line-height: 1.25; }
+  .print-resume .pr-summary { font-size: 8.5pt; font-style: italic; color: #444; margin: 0; line-height: 1.25; }
+}
