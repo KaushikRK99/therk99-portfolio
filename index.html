@@ -77,13 +77,26 @@
     <link rel="apple-touch-icon" href="/avatar.png" />
     <link rel="manifest" href="/manifest.webmanifest" />
 
-    <!-- Performance: preconnect to font CDN -->
+    <!-- Performance: preconnect to font + analytics CDNs -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RW5DM2SHL5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-RW5DM2SHL5', {
+        anonymize_ip: true,
+        cookie_flags: 'SameSite=None;Secure'
+      });
+    </script>
 
     <!-- Structured Data: Person -->
     <script type="application/ld+json">
